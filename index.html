@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blann's Portfolio - Developer</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="#home" class="logo">Blann<span>.dev</span></a>
+        <ul class="nav-menu">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- HOME SECTION -->
+    <section id="home" class="hero-section">
+      <div class="hero-content">
+        <div class="profile-image-container">
+          <div class="profile-image-wrapper">
+            <img
+              src="images/profile.jpg"
+              alt="Profile"
+              class="profile-image"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            />
+            <div class="profile-placeholder">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <h1 class="hero-title">
+          Hi, I'm <span class="gradient-text">Blann</span>
+        </h1>
+        <h2 class="hero-subtitle">Full Stack Developer</h2>
+        <p class="hero-description">
+          I craft exceptional digital experiences through clean code and
+          creative solutions. Specializing in modern web technologies and
+          user-centric design.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <span>Scroll Down</span>
+        <div class="arrow-down"></div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="content-section">
+      <div class="container">
+        <h1 class="page-title">About <span class="gradient-text">Me</span></h1>
+
+        <div class="about-intro">
+          <div class="about-card">
+            <h2>Who I Am</h2>
+            <p>
+              I'm a passionate Full Stack Developer with a keen eye for creating
+              elegant solutions to complex problems. With years of experience in
+              web development, I've honed my skills in both frontend and backend
+              technologies, always staying current with the latest industry
+              trends.
+            </p>
+            <p>
+              My journey in software development started from a deep curiosity
+              about how things work on the web. Today, I transform that
+              curiosity into powerful, scalable applications that make a
+              difference for businesses and users alike.
+            </p>
+          </div>
+        </div>
+
+        <div class="skills-section">
+          <h2 class="section-title">Technical Skills</h2>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <h3>Frontend</h3>
+              <ul>
+                <li>HTML5, CSS3, JavaScript (ES6+)</li>
+                <li>React.js, Vue.js, Angular</li>
+                <li>TypeScript</li>
+                <li>Responsive Design, Tailwind CSS</li>
+                <li>Redux, Context API</li>
+              </ul>
+            </div>
+            <div class="skill-card">
+              <h3>Backend</h3>
+              <ul>
+                <li>Node.js, Express.js</li>
+                <li>Python, Django, Flask</li>
+                <li>RESTful APIs, GraphQL</li>
+                <li>MongoDB, PostgreSQL, MySQL</li>
+                <li>Authentication & Authorization</li>
+              </ul>
+            </div>
+            <div class="skill-card">
+              <h3>Tools & Others</h3>
+              <ul>
+                <li>Git, GitHub, GitLab</li>
+                <li>Docker, Kubernetes</li>
+                <li>AWS, Azure, Heroku</li>
+                <li>CI/CD Pipelines</li>
+                <li>Agile/Scrum Methodologies</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="experience-section">
+          <h2 class="section-title">
+            Work <span class="gradient-text">Experience</span>
+          </h2>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-date">2023 - Present</div>
+              <div class="timeline-content">
+                <h3>Senior Full Stack Developer</h3>
+                <h4>Tech Innovations Inc.</h4>
+                <p>
+                  Leading development of enterprise-level web applications using
+                  React and Node.js. Mentoring junior developers and
+                  implementing best practices across the team. Reduced
+                  application load time by 40% through performance optimization.
+                </p>
+                <ul class="timeline-tags">
+                  <li>React</li>
+                  <li>Node.js</li>
+                  <li>AWS</li>
+                  <li>Team Leadership</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-date">2021 - 2023</div>
+              <div class="timeline-content">
+                <h3>Full Stack Developer</h3>
+                <h4>Digital Solutions Ltd.</h4>
+                <p>
+                  Developed and maintained multiple client projects from concept
+                  to deployment. Collaborated with designers and product
+                  managers to create user-friendly interfaces. Implemented
+                  automated testing that improved code quality by 60%.
+                </p>
+                <ul class="timeline-tags">
+                  <li>Vue.js</li>
+                  <li>Python</li>
+                  <li>PostgreSQL</li>
+                  <li>Docker</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-date">2019 - 2021</div>
+              <div class="timeline-content">
+                <h3>Junior Web Developer</h3>
+                <h4>Creative Web Studio</h4>
+                <p>
+                  Built responsive websites and web applications for diverse
+                  clients. Worked closely with senior developers to learn
+                  industry best practices. Successfully delivered over 20
+                  projects on time and within budget.
+                </p>
+                <ul class="timeline-tags">
+                  <li>JavaScript</li>
+                  <li>HTML/CSS</li>
+                  <li>PHP</li>
+                  <li>MySQL</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-date">2018 - 2019</div>
+              <div class="timeline-content">
+                <h3>Web Development Intern</h3>
+                <h4>StartUp Hub</h4>
+                <p>
+                  Assisted in developing company website and internal tools.
+                  Learned fundamental web development concepts and collaborative
+                  workflow. Contributed to frontend development and bug fixing.
+                </p>
+                <ul class="timeline-tags">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>Git</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="education-section">
+          <h2 class="section-title">Education</h2>
+          <div class="about-card">
+            <h3>Bachelor of Science in Computer Science</h3>
+            <h4>University of Technology | 2014 - 2018</h4>
+            <p>
+              Graduated with honors. Focused on software engineering,
+              algorithms, and web technologies. Completed capstone project on
+              building scalable web applications.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="content-section projects-section">
+      <div class="container">
+        <h1 class="page-title">
+          My <span class="gradient-text">Projects</span>
+        </h1>
+        <p class="page-subtitle">
+          A collection of my recent work and personal projects
+        </p>
+
+        <div class="projects-grid">
+          <div class="project-card" data-project="0">
+            <div class="project-image">
+              <div
+                class="project-placeholder"
+                style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"
+              >
+                <span>E-Commerce Platform</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>E-Commerce Platform</h3>
+              <p>
+                A full-featured e-commerce platform with payment integration,
+                inventory management, and real-time analytics dashboard.
+              </p>
+              <div class="project-tags">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>MongoDB</span>
+                <span>Stripe</span>
+              </div>
+              <button class="btn-view">View Details</button>
+            </div>
+          </div>
+
+          <div class="project-card" data-project="1">
+            <div class="project-image">
+              <div
+                class="project-placeholder"
+                style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"
+              >
+                <span>Task Management App</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Task Management App</h3>
+              <p>
+                Collaborative project management tool with real-time updates,
+                team collaboration features, and intuitive drag-and-drop interface.
+              </p>
+              <div class="project-tags">
+                <span>Vue.js</span>
+                <span>Firebase</span>
+                <span>TypeScript</span>
+                <span>WebSocket</span>
+              </div>
+              <button class="btn-view">View Details</button>
+            </div>
+          </div>
+
+          <div class="project-card" data-project="2">
+            <div class="project-image">
+              <div
+                class="project-placeholder"
+                style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"
+              >
+                <span>Social Media Dashboard</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Social Media Dashboard</h3>
+              <p>
+                Analytics dashboard for managing multiple social media accounts.
+                Features include scheduled posting, engagement tracking, and reporting tools.
+              </p>
+              <div class="project-tags">
+                <span>React</span>
+                <span>Express</span>
+                <span>PostgreSQL</span>
+                <span>Chart.js</span>
+              </div>
+              <button class="btn-view">View Details</button>
+            </div>
+          </div>
+
+          <div class="project-card" data-project="3">
+            <div class="project-image">
+              <div
+                class="project-placeholder"
+                style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);"
+              >
+                <span>Weather Forecast App</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Weather Forecast App</h3>
+              <p>
+                Beautiful weather application with detailed forecasts,
+                interactive maps, and personalized notifications.
+              </p>
+              <div class="project-tags">
+                <span>JavaScript</span>
+                <span>REST API</span>
+                <span>Leaflet.js</span>
+                <span>PWA</span>
+              </div>
+              <button class="btn-view">View Details</button>
+            </div>
+          </div>
+
+          <div class="project-card" data-project="4">
+            <div class="project-image">
+              <div
+                class="project-placeholder"
+                style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);"
+              >
+                <span>Portfolio Builder</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Portfolio Builder</h3>
+              <p>
+                Drag-and-drop portfolio builder for developers and designers.
+                Users can create beautiful portfolios without coding.
+              </p>
+              <div class="project-tags">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>AWS S3</span>
+                <span>Tailwind</span>
+              </div>
+              <button class="btn-view">View Details</button>
+            </div>
+          </div>
+
+          <div class="project-card" data-project="5">
+            <div class="project-image">
+              <div
+                class="project-placeholder"
+                style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);"
+              >
+                <span>Blog Platform</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Blog Platform</h3>
+              <p>
+                Modern blogging platform with markdown support, SEO
+                optimization, and comment system. Features a clean admin panel.
+              </p>
+              <div class="project-tags">
+                <span>Next.js</span>
+                <span>GraphQL</span>
+                <span>Prisma</span>
+                <span>Vercel</span>
+              </div>
+              <button class="btn-view">View Details</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECT MODAL -->
+    <div id="projectModal" class="project-modal">
+      <div class="modal-overlay"></div>
+      <div class="modal-content">
+        <button class="modal-close" aria-label="Close modal">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+        
+        <div class="modal-image">
+          <div class="modal-placeholder"></div>
+        </div>
+        
+        <div class="modal-details">
+          <h2 class="modal-title"></h2>
+          <div class="modal-tags"></div>
+          <p class="modal-description"></p>
+          
+          <div class="modal-features">
+            <h3>Key Features</h3>
+            <ul class="features-list"></ul>
+          </div>
+          
+          <div class="modal-tech">
+            <h3>Technologies Used</h3>
+            <div class="tech-grid"></div>
+          </div>
+          
+          <div class="modal-actions">
+            <a href="#" class="btn btn-primary" target="_blank">View Live Demo</a>
+            <a href="#" class="btn btn-outline" target="_blank">View on GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="content-section">
+      <div class="container">
+        <h1 class="page-title">
+          Get In <span class="gradient-text">Touch</span>
+        </h1>
+        <p class="page-subtitle">Let's work together on your next project</p>
+
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <h2>Let's Connect</h2>
+            <p>
+              I'm always open to discussing new projects, creative ideas, or
+              opportunities to be part of your vision. Feel free to reach out
+              through any of the channels below.
+            </p>
+
+            <div class="contact-details">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                    />
+                  </svg>
+                </div>
+                <div class="contact-text">
+                  <h3>Email</h3>
+                  <a href="mailto:blann.dev@example.com"
+                    >blann.dev@example.com</a
+                  >
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                    />
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                    />
+                  </svg>
+                </div>
+                <div class="contact-text">
+                  <h3>Location</h3>
+                  <p>Available for remote work worldwide</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <h3>Follow Me</h3>
+              <div class="social-icons">
+                <a
+                  href="https://github.com/blann"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-icon github"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                    />
+                  </svg>
+                  <span>GitHub</span>
+                </a>
+
+                <a
+                  href="https://linkedin.com/in/blann"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-icon linkedin"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                    />
+                  </svg>
+                  <span>LinkedIn</span>
+                </a>
+
+                <a
+                  href="https://facebook.com/blann.dev"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-icon facebook"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+                    />
+                  </svg>
+                  <span>Facebook</span>
+                </a>
+
+                <a
+                  href="mailto:blann.dev@example.com"
+                  class="social-icon email"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"
+                    />
+                  </svg>
+                  <span>Email</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-cta-wrapper">
+            <div class="contact-cta">
+              <div class="cta-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                </svg>
+              </div>
+              
+              <h2>Ready to Start a Conversation?</h2>
+              <p class="cta-description">
+                I'm always excited to collaborate on new projects and bring 
+                innovative ideas to life. Let's connect and create something amazing together!
+              </p>
+              
+              <div class="cta-stats">
+                <div class="stat-item">
+                  <span class="stat-number">5+</span>
+                  <span class="stat-label">Years Experience</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number">50+</span>
+                  <span class="stat-label">Projects Completed</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number">24/7</span>
+                  <span class="stat-label">Available</span>
+                </div>
+              </div>
+              
+              <div class="cta-actions">
+                <a href="mailto:blann.dev@example.com" class="btn btn-primary btn-large">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                  </svg>
+                  Send me an Email
+                </a>
+                <p class="cta-helper">or choose your preferred platform below</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
+
