@@ -652,12 +652,57 @@ function initProjectModal() {
   });
 }
 
+// ==================== BURGER MENU TOGGLE ====================
+function initBurgerMenu() {
+  const burgerMenu = document.querySelector('.burger-menu');
+  const navMenu = document.querySelector('.nav-menu');
+  const navLinks = document.querySelectorAll('.nav-menu a');
+  const mobileOverlay = document.querySelector('.mobile-overlay');
+
+  if (!burgerMenu || !navMenu) return;
+
+  // Toggle menu on burger click
+  burgerMenu.addEventListener('click', () => {
+    burgerMenu.classList.toggle('active');
+    navMenu.classList.toggle('active');
+    if (mobileOverlay) mobileOverlay.classList.toggle('active');
+    
+    // Prevent body scroll when menu is open
+    if (navMenu.classList.contains('active')) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+  });
+
+  // Close menu when clicking on a nav link
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      burgerMenu.classList.remove('active');
+      navMenu.classList.remove('active');
+      if (mobileOverlay) mobileOverlay.classList.remove('active');
+      document.body.style.overflow = '';
+    });
+  });
+
+  // Close menu when clicking on overlay
+  if (mobileOverlay) {
+    mobileOverlay.addEventListener('click', () => {
+      burgerMenu.classList.remove('active');
+      navMenu.classList.remove('active');
+      mobileOverlay.classList.remove('active');
+      document.body.style.overflow = '';
+    });
+  }
+}
+
 // ==================== INITIALIZE EVERYTHING ====================
 document.addEventListener("DOMContentLoaded", () => {
   // Initialize particle background and store globally for color changes
   window.particleBackground = new ParticleBackground();
 
   // Initialize other features
+  initBurgerMenu();
   initSmoothScroll();
   initScrollAnimations();
   initParallaxScrolling();

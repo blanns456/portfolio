@@ -8,10 +8,18 @@
   </head>
   <body>
     <canvas id="canvas"></canvas>
+    <div class="mobile-overlay"></div>
 
     <nav class="navbar">
       <div class="nav-container">
-        <a href="#home" class="logo">Blann<span>.dev</span></a>
+        <a href="#home" class="logo">Blanns<span>.dev</span></a>
+
+        <button class="burger-menu" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
         <ul class="nav-menu">
           <li><a href="#home" class="active">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -32,21 +40,10 @@
               class="profile-image"
               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
             />
-            <div class="profile-placeholder">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-              >
-                <path
-                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"
-                />
-              </svg>
-            </div>
           </div>
         </div>
         <h1 class="hero-title">
-          Hi, I'm <span class="gradient-text">Blann</span>
+          Hi, I'm <span class="gradient-text">Blanns</span>
         </h1>
         <h2 class="hero-subtitle">Full Stack Developer</h2>
         <p class="hero-description">
@@ -242,7 +239,9 @@
             <div class="project-image">
               <div
                 class="project-placeholder"
-                style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"
+                style="
+                  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                "
               >
                 <span>E-Commerce Platform</span>
               </div>
@@ -267,7 +266,9 @@
             <div class="project-image">
               <div
                 class="project-placeholder"
-                style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"
+                style="
+                  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+                "
               >
                 <span>Task Management App</span>
               </div>
@@ -276,7 +277,8 @@
               <h3>Task Management App</h3>
               <p>
                 Collaborative project management tool with real-time updates,
-                team collaboration features, and intuitive drag-and-drop interface.
+                team collaboration features, and intuitive drag-and-drop
+                interface.
               </p>
               <div class="project-tags">
                 <span>Vue.js</span>
@@ -292,7 +294,9 @@
             <div class="project-image">
               <div
                 class="project-placeholder"
-                style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"
+                style="
+                  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+                "
               >
                 <span>Social Media Dashboard</span>
               </div>
@@ -301,7 +305,8 @@
               <h3>Social Media Dashboard</h3>
               <p>
                 Analytics dashboard for managing multiple social media accounts.
-                Features include scheduled posting, engagement tracking, and reporting tools.
+                Features include scheduled posting, engagement tracking, and
+                reporting tools.
               </p>
               <div class="project-tags">
                 <span>React</span>
@@ -317,7 +322,9 @@
             <div class="project-image">
               <div
                 class="project-placeholder"
-                style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);"
+                style="
+                  background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+                "
               >
                 <span>Weather Forecast App</span>
               </div>
@@ -342,7 +349,9 @@
             <div class="project-image">
               <div
                 class="project-placeholder"
-                style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);"
+                style="
+                  background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);
+                "
               >
                 <span>Portfolio Builder</span>
               </div>
@@ -367,7 +376,9 @@
             <div class="project-image">
               <div
                 class="project-placeholder"
-                style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);"
+                style="
+                  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+                "
               >
                 <span>Blog Platform</span>
               </div>
@@ -396,33 +407,47 @@
       <div class="modal-overlay"></div>
       <div class="modal-content">
         <button class="modal-close" aria-label="Close modal">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
           </svg>
         </button>
-        
+
         <div class="modal-image">
           <div class="modal-placeholder"></div>
         </div>
-        
+
         <div class="modal-details">
           <h2 class="modal-title"></h2>
           <div class="modal-tags"></div>
           <p class="modal-description"></p>
-          
+
           <div class="modal-features">
             <h3>Key Features</h3>
             <ul class="features-list"></ul>
           </div>
-          
+
           <div class="modal-tech">
             <h3>Technologies Used</h3>
             <div class="tech-grid"></div>
           </div>
-          
+
           <div class="modal-actions">
-            <a href="#" class="btn btn-primary" target="_blank">View Live Demo</a>
-            <a href="#" class="btn btn-outline" target="_blank">View on GitHub</a>
+            <a href="#" class="btn btn-primary" target="_blank"
+              >View Live Demo</a
+            >
+            <a href="#" class="btn btn-outline" target="_blank"
+              >View on GitHub</a
+            >
           </div>
         </div>
       </div>
@@ -464,37 +489,53 @@
                 </div>
                 <div class="contact-text">
                   <h3>Email</h3>
-                  <a href="mailto:blann.dev@example.com"
-                    >blann.dev@example.com</a
+                  <a href="mailto:blannslapening@gmail.com"
+                    >blannslapening@gmail.com</a
                   >
                 </div>
               </div>
 
-              <div class="contact-item">
-                <div class="contact-icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                    />
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                    />
-                  </svg>
+              <div class="contact-item location-item">
+                <div class="location-header">
+                  <div class="contact-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                      />
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                      />
+                    </svg>
+                  </div>
+                  <div class="contact-text">
+                    <h3>Location</h3>
+                    <p>Available for remote work worldwide</p>
+                  </div>
                 </div>
-                <div class="contact-text">
-                  <h3>Location</h3>
-                  <p>Available for remote work worldwide</p>
+
+                <!-- Google Map Inside Location Card -->
+                <div class="location-map">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.2190054166313!2d126.35679857539927!3d8.180679601689944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32fdbb005a2d9f77%3A0xca44360b4e394ade!2sbahay%20ni%20blanss!5e0!3m2!1sen!2sph!4v1762177806750!5m2!1sen!2sph"
+                    width="100%"
+                    height="300"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Location Map"
+                  ></iframe>
                 </div>
               </div>
             </div>
@@ -503,7 +544,7 @@
               <h3>Follow Me</h3>
               <div class="social-icons">
                 <a
-                  href="https://github.com/blann"
+                  href="https://github.com/blanns456"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="social-icon github"
@@ -521,7 +562,7 @@
                 </a>
 
                 <a
-                  href="https://linkedin.com/in/blann"
+                  href="https://www.linkedin.com/in/blanns-lapening-40260528a/"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="social-icon linkedin"
@@ -539,7 +580,7 @@
                 </a>
 
                 <a
-                  href="https://facebook.com/blann.dev"
+                  href="https://www.facebook.com/bloodskie.lapening"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="social-icon facebook"
@@ -557,7 +598,7 @@
                 </a>
 
                 <a
-                  href="mailto:blann.dev@example.com"
+                  href="mailto:blannslapening@gmail.com"
                   class="social-icon email"
                 >
                   <svg
@@ -578,17 +619,28 @@
           <div class="contact-cta-wrapper">
             <div class="contact-cta">
               <div class="cta-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+                  />
                 </svg>
               </div>
-              
+
               <h2>Ready to Start a Conversation?</h2>
               <p class="cta-description">
-                I'm always excited to collaborate on new projects and bring 
-                innovative ideas to life. Let's connect and create something amazing together!
+                I'm always excited to collaborate on new projects and bring
+                innovative ideas to life. Let's connect and create something
+                amazing together!
               </p>
-              
+
               <div class="cta-stats">
                 <div class="stat-item">
                   <span class="stat-number">5+</span>
@@ -603,15 +655,30 @@
                   <span class="stat-label">Available</span>
                 </div>
               </div>
-              
+
               <div class="cta-actions">
-                <a href="mailto:blann.dev@example.com" class="btn btn-primary btn-large">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                <a
+                  href="mailto:blannslapening@gmail.com"
+                  class="btn btn-primary btn-large"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                    />
                   </svg>
                   Send me an Email
                 </a>
-                <p class="cta-helper">or choose your preferred platform below</p>
+                <p class="cta-helper">
+                  or choose your preferred platform below
+                </p>
               </div>
             </div>
           </div>
@@ -622,4 +689,3 @@
     <script src="js/main.js"></script>
   </body>
 </html>
-
